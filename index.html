@@ -264,7 +264,7 @@ document.addEventListener('click',e=>{let el=e.target.closest('[data-action],[da
 document.addEventListener('change',e=>{if(e.target.id==='pet-filter'){filterPet=e.target.value;render()}else if(e.target.id==='restore-file'&&e.target.files[0])restore(e.target.files[0])});
 document.addEventListener('submit',e=>{if(e.target.id==='owner-form'){e.preventDefault();let f=new FormData(e.target);state.owner=String(f.get('owner')||'').trim();if(!state.owner)return;state.palette=f.get('palette');state.dark=false;sessionStorage.setItem('zamp-step','2');render()}});
 (async()=>{try{await initDB();state={...blank(),...(await getState()||{}),dark:false};render()}catch(e){$('#app').innerHTML='<div class="onboard"><div class="card"><h2>Archivio non disponibile</h2><p>Per utilizzare ZAMP0 occorre un browser che consenta IndexedDB. Prova ad aprire il file in Chrome, Edge o Safari, senza navigazione privata.</p></div></div>'}})();
-</script><footer id="zamp-pwa-footer"><span class="zamp-footer-version">ZAMP0 · v1.0.37</span><span class="zamp-footer-credit">Powered by <a href="https://8s2design.wixsite.com/home" target="_blank" rel="noopener noreferrer">8s2design</a></span></footer><script>
+</script><footer id="zamp-pwa-footer"><span class="zamp-footer-version">ZAMP0 · v1.0.38</span><span class="zamp-footer-credit">Powered by <a href="https://8s2design.wixsite.com/home" target="_blank" rel="noopener noreferrer">8s2design</a></span></footer><script>
 (()=>{let deferredPrompt=null;
 const standalone=()=>window.matchMedia('(display-mode: standalone)').matches||navigator.standalone===true;
 window.addEventListener('beforeinstallprompt',e=>{e.preventDefault();deferredPrompt=e});
