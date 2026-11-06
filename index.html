@@ -147,26 +147,10 @@ img,svg,canvas{max-width:100%}
 @media(max-width:600px){.z-pet-card{padding:18px}.z-pet-card .avatar.lg{width:104px;height:104px;border-radius:18px}.z-pet-card .petrow{gap:13px}.z-pet-card h3{font-size:1.2rem}.z-pet-detail{padding:20px 17px}.z-pet-detail .z-detail-head .avatar.lg{width:94px;height:94px;border-radius:17px}.z-pet-detail .z-detail-head{gap:13px}.z-pet-detail .z-detail-head h2{font-size:1.35rem}.z-pet-detail .grid.two{grid-template-columns:repeat(2,minmax(0,1fr));gap:9px}.z-pet-detail .notice{padding:12px;overflow-wrap:anywhere;min-height:0}}
 @media(max-width:380px){.z-pet-card .petrow{align-items:flex-start}.z-pet-card .avatar.lg{width:88px;height:88px}.z-pet-detail .grid.two{grid-template-columns:1fr}}
 </style><style id="zamp-logo-wordmark-v1032">body.configured .top .header-logo{width:clamp(150px,19vw,230px);max-width:230px;height:auto;max-height:72px;object-fit:contain;object-position:left center}@media(max-width:780px){body.configured .top .header-logo{width:160px;max-width:160px;height:auto;max-height:55px}}.logo-large{max-width:380px;width:85%;height:auto}</style><style id="zamp-logo-no-crop">body.configured .top .header-logo{width:210px!important;max-width:min(210px,45vw)!important;height:auto!important;max-height:none!important;object-fit:contain!important;overflow:visible!important;display:block!important}.top .brand{overflow:visible!important;min-width:0!important}.logo-large{object-fit:contain!important;height:auto!important;max-height:none!important}@media(max-width:780px){body.configured .top .header-logo{width:165px!important;max-width:42vw!important;height:auto!important;max-height:none!important}}</style><style id="zamp-footer-mobile-fix">
-/* Keep credits above the fixed mobile navigation. */
-@media (max-width:780px){
-  #zamp-pwa-footer{
-    position:relative;
-    z-index:1;
-    box-sizing:border-box;
-    width:100%;
-    padding:16px 12px calc(108px + env(safe-area-inset-bottom, 0px)) !important;
-    display:flex;
-    flex-wrap:wrap;
-    align-items:center;
-    justify-content:center;
-    column-gap:9px;
-    row-gap:5px;
-    font-size:12px;
-    line-height:1.5;
-    text-align:center;
-  }
-  #zamp-pwa-footer .zamp-footer-version,
-  #zamp-pwa-footer .zamp-footer-credit{white-space:normal}
+/* Mobile: footer scrolls naturally underneath the opaque fixed menu. */
+@media(max-width:780px){
+  #zamp-pwa-footer{position:relative;z-index:0;padding:16px 12px 18px !important;display:flex;flex-wrap:wrap;justify-content:center;align-items:center;gap:6px 12px;text-align:center;line-height:1.5}
+  .mobile-nav{z-index:100;background:var(--card);isolation:isolate;box-shadow:0 -3px 14px #00000012}
 }
 </style></head><body><div id="app"></div><div id="modal-root"></div><div id="toast-root"></div><script>
 'use strict';
