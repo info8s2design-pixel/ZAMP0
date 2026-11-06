@@ -1,0 +1,26 @@
+{
+  "name": "ZAMP0 — Il mondo dei tuoi animali",
+  "short_name": "ZAMP0",
+  "description": "Il diario digitale dei tuoi animali domestici",
+  "lang": "it",
+  "start_url": "./",
+  "scope": "./",
+  "display": "standalone",
+  "background_color": "#F5F0E5",
+  "theme_color": "#668B76",
+  "icons": [
+    {
+      "src": "./icon-0.png",
+      "sizes": "192x192",
+      "type": "image/png",
+      "purpose": "any maskable"
+    },
+    {
+      "src": "./icon-1.png",
+      "sizes": "512x512",
+      "type": "image/png",
+      "purpose": "any maskable"
+    }
+  ],
+  "id": "./"
+}
